@@ -6,4 +6,4 @@ list.forEach(
         console.log((index +1) +"個目の値" + currentValue);
     
     }
-);
+)
