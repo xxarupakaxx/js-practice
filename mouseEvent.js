@@ -29,4 +29,15 @@ function init(){
     
 }
 
+function removeMouseInOutEvent(){
+    let outerBox = document.getElementById("outerBox");
+    outerBox.removeEventListener("mouseenter",onMouseInOutEvent);
+    outerBox.removeEventListener("mouseleave",onMouseInOutEvent);
+    outerBox.removeEventListener("mouseover",onMouseInOutEvent);
+    outerBox.removeEventListener("mouseout",onMouseInOutEvent);
+
+    let msgList =document.getElementById("msgList");
+    msgList.innerHTML ="";
+}
+
 window.addEventListener("DOMContentLoaded",init);
