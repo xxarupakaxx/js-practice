@@ -25,7 +25,20 @@ function onClassButtonClick(){
     resultP.textContent =result;
 
 }
-//onNameButtonClick()
+function onNameButtonClick(){
+    let checkboxes = document.getElementsByName("skill");
+
+    let result="チェックされたもの";
+    for(let i = 0; i<checkboxes.length;i++){
+        if(checkboxes[i].checked){
+            result +=checkboxes[i].value + ",";
+        }
+    }
+
+    let resultP = document.getElementById("result");
+    resultP.textContent = result;
+    
+}
 
 
 
