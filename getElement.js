@@ -14,7 +14,16 @@ function onTagButtonClick(){
     resultP.textContent =result;
 }
 function onClassButtonClick(){
-    
+    let redElements = document.getElementsByClassName("redText");
+    let result ="";
+    for(let i = 0 ; i< redElements.length; i++){
+        result += redElements[i].textContent + ":";
+
+    }
+    let resultP = document.getElementById("result");
+
+    resultP.textContent =result;
+
 }
 //onNameButtonClick()
 
